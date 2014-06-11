@@ -8,10 +8,10 @@ var twitter = require('twitter'),
 
 //Setup twitter stream api
 var twit = new twitter({
-  consumer_key: '<ENTER>',
-  consumer_secret: '<ENTER>',
-  access_token_key: '<ENTER>',
-  access_token_secret: '<ENTER>'
+  consumer_key: process.env.consumer_key,
+  consumer_secret: process.env.consumer_secret,
+  access_token_key: process.env.access_token_key,
+  access_token_secret: process.env.access_token_secret
 }),
 stream = null;
 
@@ -28,7 +28,9 @@ io.sockets.on('connection', function (socket) {
 
     if(stream === null) {
       //Connect to twitter stream passing in filter for entire world.
-      twit.stream('statuses/filter', {'locations':'-180,-90,180,90'}, function(stream) {
+	  twit.stream('statuses/sample', function(stream) {
+//      twit.stream('statuses/filter', {'track':'cloudfoundry'}, function(stream) {
+//      twit.stream('statuses/filter', {'locations':'-180,-90,180,90'}, function(stream) {
           stream.on('data', function(data) {
               // Does the JSON result have coordinates
               if (data.coordinates){
