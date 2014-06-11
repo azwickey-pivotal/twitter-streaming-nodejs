@@ -8,10 +8,8 @@ Shows how to stream real time twitter data to Google Maps using NodeJS.
 Update Cloudfoundry application manifest to include your Twitter credentials:
 <code>
     env:
-       consumer_key: <ADD_ME>
-       consumer_secret: <ADD_ME>
-       access_token_key: <ADD_ME>
-       access_token_secret: <ADD_ME>
+       consumer_key: ADD_ME<br>
+       consumer_secret: ADD_ME<br>
+       access_token_key: ADD_ME<br>
+       access_token_secret: ADD_ME<br>
 </code>
-<h2>Step 2: Create an AWS Elastic Beanstalk application</h2>
-Access Elastic Beanstalk from the console. Choose to create a new application and give it a name and description.
