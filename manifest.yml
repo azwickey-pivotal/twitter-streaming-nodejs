@@ -6,7 +6,7 @@ applications:
   host: tweets
   path: .
   env:
-    consumer_key: g2NvkOZR8J5BZS39EUrNXQ
-    consumer_secret: VduSRrkhlfsRISOXFJCjW1txT65tesyyAvDgBpkBsZI
-    access_token_key: 1686410772-6YS317D0eHlvBjulJCDhaTiXtKZJO80hskGMuRo
-    access_token_secret: SOiyJ9Qdq0wQChZkK2ztgeaV1H2IGe0VGRaYxS7pod7fL
+    consumer_key: <ADD_ME>
+    consumer_secret: <ADD_ME>
+    access_token_key: <ADD_ME>
+    access_token_secret: <ADD_ME>
